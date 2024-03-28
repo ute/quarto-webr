@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+
+/*-- scss: rules --*/
+
+
+.qwebr-editor {
+//    border: 1px solid #EE00EE;
+    --theme: vs; 
+}
+
+
+.qwebr-output-code-area{
+  background-color:#d3d3d340;
+}
+/*
+.reveal div.qwebr-output-code-area  {
+    background-color: unset;
+    color: #FFF;
+ }
+
+.qwebr-output-code-stdout {
+    color: #FFF;
+ }
+
+ :root {
+    --qwebr-border-color:  #00EEEE;
+  }
+ 
+
+.reveal div.qwebr-interactive-area {
+    display: block;
+    box-shadow: none;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  } 
+  */
+
+/*
+ .reveal pre div code.qwebr-output-code-stdout {
+    color: unset;
+  } 
+
+ */

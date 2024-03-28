@@ -1,34 +1,62 @@
 ---
 title: webR in Quarto HTML Documents
-format: revealjs
+format: 
+#  html: default
+  revealjs: default
+#    css: "stylez.css"
+#    fontsize: 30px
 engine: knitr
 
 webr:
   celldefaults:
-    editor-font-size: '40pt'
+  #  editor-font-size: '40pt'
     out-width: "100%"
+  #  font-scale: 1
 
 filters:
   - webr
     
 ---
 
-This is a webR-enabled code cell in a Quarto HTML document.
-I set the editor font size to huge 40 points (original is 17.5 points)
-
-```{webr-r}
+Here is an ordinary code cell demonstrating `confint.lm`.
+Revealjs scales content down to `0.55 em`. Perhaps this should be emulated for qwebr-editor cells
+```{r}
+#| echo: true
 fit = lm(mpg ~ am, data = mtcars)
 
-summary(fit)
+confint(fit)
 ```
+
+
+This is a webR-enabled code cell in a Quarto HTML document, with autorun (👍 to autorun!)
+
+```{webr-r}
+#| autorun: true
+fit = lm(mpg ~ am, data = mtcars)
+
+confint(fit)
+```  
+
+
+
+Danach
 
 ## Now with font size option set in cell
 
-This is a webR-enabled code cell in a Quarto HTML document.
+This is a webR-enabled code cell in a 
 
-```{webr-r}
-#| editor-font-size: "25pt"
+::: {#bigman style="font-size: 200%; color: green;"}
+Quarto HTML document.
+```{r}
 fit = lm(mpg ~ am, data = mtcars)
 
-summary(fit)
+confint(fit)
 ```
+
+Do it yourself
+```{webr-r}
+fit = lm(mpg ~ am, data = mtcars)
+
+confint(fit)
+```
+:::

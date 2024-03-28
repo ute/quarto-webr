@@ -1,0 +1,17 @@
+
+.small{
+    font-size: small;
+  }
+.smaller{
+    font-size: smaller;
+  }
+.large{
+    font-size: large;
+  }
+.larger{
+    font-size: larger;
+  }
+
+.reveal pre {
+    font-size: 1em;
+  }

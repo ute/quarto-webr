@@ -9,3 +9,4 @@ docs/_site/*
 tests/_site/*
 *.html
 !_extensions/*/*
+.vdoc.r
